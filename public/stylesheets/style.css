@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    background-color: #495867;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   body, html {
@@ -7,22 +9,22 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: #f7f7ff;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #577399;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #bdd5ea;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #577399;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +35,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #577399;
   }
   
   .post-list {
@@ -45,11 +47,12 @@
     padding: .5%;
     border-radius: 5px;
     border: 1px solid #ccc;
+    color: #f7f7ff
   }
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #577399;
   }
   
   textarea {
@@ -75,7 +78,7 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(22, 22, 22);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +86,11 @@
   }
   
   header h1 {
-    font-size: 1em;
+    font-size: 5vw;
+    border: mediumblue;
+    border-style: outset;
+    border-radius: 2vw;
+    border-width: 2vw;
   }
   
   main {
@@ -97,7 +104,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #577399;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -106,7 +113,7 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #577399;
   }
   
   .delete-post-btn {
@@ -120,12 +127,29 @@
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    padding: 1ch;
   }
   
   .post .title span {
     font-style: italic;
     font-size: 90%;
     color: #7d7d7d;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
   }
   
   .edit-link {

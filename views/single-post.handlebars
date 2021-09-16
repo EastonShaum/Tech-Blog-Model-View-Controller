@@ -1,9 +1,10 @@
 <article class="post">
   <div class="title">
-    <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
-    <span>({{format_url post.post_url}})</span>
+    <a href="/post/{{post.id}}">{{post.title}}</a>
+    {{!-- <span>({{format_url post.post_text}})</span> --}}
   </div>
   <div class="meta">
+    {{post.post_text}}
     {{post.vote_count}} point(s) by {{post.user.username}} on
     {{format_date post.created_at}}
     |
